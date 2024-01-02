@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador a bordo</title>
+</head>
+<body>
+    <script>
+        var a = true
+        var b = false
+        console.log(!a)
+        console.log(!b)
+        console.log('!!a', !!a)
+        console.log('!!b', !!b)
+
+        // null, indefined, '', false, 0
+        console.log(!!null) // false
+        console.log(!!undefined) // false
+        console.log(!!'') // false
+        console.log(!!0) // false
+
+        console.log(!!'texto') // true
+        console.log(!!20) // true
+
+        console.log(10 && 'texto' && 'Programador')
+        console.log(null && 'Programador a Bordo')
+        console.log('Passa' && 0 && 'Dev')
+        console.log('Passou' && null)
+        console.log('Passou' && 0)
+        console.log("false" && 100 && '' && 'teste' && null)
+        console.log(10 > 5 && 7 < 10)
+        console.log(10 > 5 && 10 > 11)
+
+        console.log(null || 'Programador a bordo')
+        console.log(null || 'Programador a Bordo' || 26)
+        console.log(null || '' || 26)
+        console.log('Programador a bordo' || 'teste')
+        console.log(10 > 5 || 10 < 11 )
+        console.log(10 > 5 || 10 > 11)
+        console.log(10 < 5 || 10 > 11)
+        console.log(null || false || 0)
+
+        console.log('Programador' && 2050 || '' && 26)
+        console.log('Programador' && 2050 && 'a Bordo' || 0)
+        console.log(null || !'' && 'Programador')
+    </script>
+</body>
+</html>
