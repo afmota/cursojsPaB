@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador a bordo: Array</title>
+</head>
+<body>
+    <script>
+        var numeros = [5, 3, 12, 17, 10, 99]
+        console.log(numeros)
+        console.log(numeros[2])
+        console.log(numeros[5])
+        console.log(numeros[0])
+        console.log(numeros.length)
+        console.log(numeros.pop()) //remove e retorna o último elemento do array
+        console.log(numeros)
+
+        var numeroRetornado = numeros.pop();
+        console.log(`numeroRetornado: ${numeroRetornado}`)
+        console.log(numeros)
+        
+        console.log(numeros.slice(2,5)) // remove elementos da posição inicial até a posição final -1
+        console.log(numeros.slice(3)) // remove da posição informada até o fim do array
+        console.log(numeros)
+
+        console.log(numeros.join('--'))
+        console.log(numeros)
+
+        var usuario = [
+            'Ayrton',
+            26,
+            'Programador a bordo',
+            2019,
+            'brasileiro'
+        ]
+
+        console.log(usuario)
+        usuario.push('RJ')
+        console.log(usuario)
+
+        console.log(usuario.includes('brasileiro'))
+        console.log(usuario.includes('japonês'))
+        console.log(usuario.includes(2019))
+
+        console.log(usuario.indexOf(2019))
+        console.log(usuario.indexOf('Zé'))
+
+        var arr1 = [3, 2, 1]
+        var arr2 = ['Programador', 'a', 'Bordo']
+
+        var resultado = arr1.concat(arr2)
+        console.log(resultado)
+
+        var resultado = arr1.concat(arr2).concat(['teste', 'fulano', 'ciclano'])
+        console.log(resultado)
+
+        console.log([arr1, arr2])
+        console.log([...arr1, ...arr2, ...['teste', 'fulano', 'ciclano']]) //spread de array
+
+        console.log(usuario)
+        var nome = usuario[0]
+        console.log(nome)
+        var idade = usuario[1]
+        var ano = usuario[3]
+        console.log(nome, idade, ano)
+
+        var [nome, idade, , ano] = usuario;  // array destructuring
+        console.log(nome, idade, ano)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador a bordo: Switch</title>
+</head>
+<body>
+    <script>
+        var cor = 'azul'
+        switch (cor) {
+            case 'azul':
+                console.log('Cor azul')
+                break
+            case 'amarelo':
+                console.log('Cor amarela')
+                break
+            case 'vermelho':
+                console.log('Cor vermelha')
+                break
+            default:
+                console.log('Cor rosa')
+        }
+
+        switch(cor) {
+            case 'vermelho':
+            case 'amarelo':
+            case 'laranja':
+                console.log('Cor quente')
+                break
+            case 'verde':
+            case 'azul':
+            case 'roxo':
+                console.log('Cor fria')
+                break
+            default:
+                console.log('Não identificado')
+                break
+        }
+    </script>
+</body>
+</html>
